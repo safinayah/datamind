@@ -13,7 +13,7 @@ The repository is shared as a portfolio project. It contains application source 
 | Data-impact reports | A guided workflow that frames a data problem, financial impact, regulatory risk, recommendations, and ROI assumptions. |
 | Knowledge-base administration | Article creation, activation, re-ingestion, and chunk management through the application’s admin experience. |
 | User workspace | Authentication, saved conversations, report history, and conversation-tone preferences. |
-| Delivery quality | TypeScript, database migrations, unit tests, linting, and GitHub Actions CI configuration. |
+| Delivery quality | TypeScript, database migrations, unit tests, linting, and production-build scripts. |
 
 ## Retrieval architecture
 
@@ -69,7 +69,6 @@ server/                  tRPC backend, AI prompts, RAG pipeline, data-access hel
   seed-knowledge.mjs     Curated knowledge-base seed content
 drizzle/                 Database schema and SQL migrations
 shared/                  Shared constants and types
-.github/workflows/       Continuous-integration workflows
 ```
 
 ## Local setup
@@ -106,7 +105,7 @@ See [`.env.example`](.env.example). Never commit `.env` files, database URLs, OA
 
 ## Public-release notes
 
-This source release intentionally excludes `node_modules`, build output, managed-platform runtime assets, local logs, environment files, Git history, and private planning material. Hosted platform credentials and services must be replaced with your own configuration to run a self-managed deployment.
+This source release intentionally excludes `node_modules`, build output, managed-platform runtime assets, local logs, environment files, Git history, private planning material, and managed-platform CI workflow files. Hosted platform credentials and services must be replaced with your own configuration to run a self-managed deployment.
 
 ## Portfolio contact
 
