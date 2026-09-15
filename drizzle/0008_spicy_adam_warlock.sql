@@ -1,0 +1,1 @@
+ALTER TABLE `dataPlans` MODIFY COLUMN `userId` int DEFAULT null;

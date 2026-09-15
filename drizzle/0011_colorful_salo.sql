@@ -1,0 +1,1 @@
+ALTER TABLE `testimonials` ADD `testimonialType` enum('personal','tool') DEFAULT 'personal' NOT NULL;
